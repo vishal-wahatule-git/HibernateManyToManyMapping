@@ -16,6 +16,9 @@
 		
 		<property name="hibernate.hbm2ddl.auto">create</property>
 		
+		<mapping class="com.mapping.Entity.Quetion"/>
+        <mapping class="com.mapping.Entity.Answer"/>
+		
 		
 		
 	</session-factory>
