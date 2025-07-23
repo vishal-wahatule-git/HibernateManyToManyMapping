@@ -5,7 +5,7 @@
 
 <hibernate-configuration>
 	<session-factory>
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306//ManyToManyUnidirectionalMapping</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ManyToManyBidirectionalMapping</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">root</property>
 		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
@@ -14,9 +14,9 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		
-		<property name="hibernate.hbm2ddl.auto">create</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
 		
-		<mapping class="com.mapping.Entity.Quetion"/>
+		<mapping class="com.mapping.Entity.Question"/>
         <mapping class="com.mapping.Entity.Answer"/>
 		
 		
