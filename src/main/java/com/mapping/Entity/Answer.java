@@ -20,8 +20,16 @@ public class Answer {
 	@ManyToMany(mappedBy = "answerList")
 	private List<Question> questionList;
 	
+	public Answer() {
+	}
+	
 	public Answer(String answer) {
 		this.answer=answer;
+	}
+
+	@Override
+	public String toString() {
+		return "Answer [id=" + id + ", answer=" + answer + ", questionList=" + questionList + "]";
 	}
 	
 	

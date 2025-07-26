@@ -20,6 +20,10 @@ public class Question {
 	@ManyToMany
 	private List<Answer> answerList;
 	
+	public Question() {
+        
+    }
+	
 	public Question(String question) {
 		this.question=question;
 	}
@@ -64,6 +68,11 @@ public class Question {
 	 */
 	public void setAnswerList(List<Answer> answerList) {
 		this.answerList = answerList;
+	}
+
+	@Override
+	public String toString() {
+		return "Question [id=" + id + ", question=" + question + ", answerList=" + answerList + "]";
 	}
 	
 	
